@@ -1,4 +1,4 @@
-def compute_scc(node, x, y, z, w, k, nv, flag, flag_shared, source_or_target, nv_out):
+def distributed_algorithm(node, x, y, z, w, k, nv, flag, flag_shared, source_or_target, nv_out):
     # Step 1
     xi = set.union(*[x[j] for j in nv])
 
@@ -25,7 +25,7 @@ def compute_scc(node, x, y, z, w, k, nv, flag, flag_shared, source_or_target, nv
 
 
 def process_func(node, to_see, x, y, z, w, k, nv, x_shared, y_shared, z_shared, w_shared, k_shared, flag=None, flag_shared=None, source_or_target=0, nv_out=None):
-    x, y, z, w, k, flag = compute_scc(node, x, y, z, w, k, nv, flag, flag_shared, source_or_target, nv_out)
+    x, y, z, w, k, flag = distributed_algorithm(node, x, y, z, w, k, nv, flag, flag_shared, source_or_target, nv_out)
     w_result = w[node]
     if k is not None:
         k_shared[node] = k[node]
