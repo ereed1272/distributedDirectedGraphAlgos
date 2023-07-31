@@ -30,7 +30,6 @@ affiliations:
 date: August 1, 2023
 bibliography: paper.bib
 link-citations: true
-
 ---
 
 # Summary
