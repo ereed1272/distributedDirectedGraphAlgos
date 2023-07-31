@@ -43,7 +43,7 @@ Many important computational problems need to be solved on large-scale directed 
 `distributedDirectedGraphAlgos` is a Python package for computing properties of directed graphs in a distributed manner. The API for `distributedDirectedGraphAlgos` provides distributed implementations of important operations such as finding strongly connected components and the finite diameter of directed graphs. `distributedDirectedGraphAlgos` can be used for computation on large-scale graphs.
 
 `distributedDirectedGraphAlgos` can be used by a large population of users, including researchers, scientists, and developers. 
-The algorithms were previously developed and published in [@reedSCCs:2023]. The distributed nature of these algorithms enable scalability thereby making `distributedDirectedGraphAlgos` accessible and useful for future scientific explorations.
+The algorithms were previously developed and published in [@reedSCCs]. The distributed nature of these algorithms enable scalability thereby making `distributedDirectedGraphAlgos` accessible and useful for future scientific explorations.
 
 # Mathematics
 
