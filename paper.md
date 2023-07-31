@@ -41,8 +41,7 @@ Directed graphs are composed of a group of nodes that are connected by directed 
 
 `distributedDirectedGraphAlgos` is a Python package for computing properties of directed graphs in a distributed manner. The API for `distributedDirectedGraphAlgos` provides distributed implementations of important operations including finding strongly connected components and the finite diameter of directed graphs. Strongly connected components are maximal subgraphs, where every node has a direct path from every other node in the subgraph. The finite diameter is the longest shortest path between any two nodes where such a path exists. Finding strongly connected components and the finite diameter of directed graphs have important implications in distributed control and in machine learning. For example, strongly connected components are important in designing controllable and observable networks and in solving community detection problems. Similarly, the finite diameter is important for fault detection in networks and speeding up search algorithms. In general, `distributedDirectedGraphAlgos` provides a foundation for distributed computation on large-scale directed graphs. 
 
-`distributedDirectedGraphAlgos` can be used by a large population of users, including researchers, scientists, and developers. 
-The algorithms were previously developed and published in [@reedSCCs]. The distributed nature of these algorithms enable scalability thereby making `distributedDirectedGraphAlgos` accessible and useful for future scientific explorations.
+`distributedDirectedGraphAlgos` can be used by a large population of users, including researchers, scientists, and developers. The algorithms were previously developed and published in [@reedSCCs]. The distributed nature of these algorithms enable scalability thereby making `distributedDirectedGraphAlgos` accessible and useful for future scientific explorations.
 
 
 # Acknowledgements
