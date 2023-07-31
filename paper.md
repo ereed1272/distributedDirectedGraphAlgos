@@ -35,60 +35,22 @@ link-citations: true
 
 # Summary
 
-Many important computational problems need to be solved on large-scale directed graphs. Examples include partitioning graphs into clusters based on similar features, known as community detection, as well as identifying failures in communication across nodes, known as fault detection. Distributed computation is critical for solving these large-scale computational problems on multiple machines in an efficient manner. This package provides distributed functions in Python for solving computational problems on large-scale directed graphs. In particular, the package finds both the strongly connected components and finite diameter of directed graphs in a distributed manner. 
+Directed graphs are composed of a group of nodes that are connected by directed edges. Many important computational problems need to be solved on large-scale directed graphs. Examples include partitioning graphs into clusters based on similar features, known as community detection, as well as identifying failures in communication across nodes, known as fault detection. Distributed computation is critical for solving these large-scale computational problems on multiple machines in an efficient manner. This package provides distributed functions in Python for solving computational problems on large-scale directed graphs. 
 
 # Statement of need
 
 
-
-`distributedDirectedGraphAlgos` is a Python package for computing properties of directed graphs in a distributed manner. The API for `distributedDirectedGraphAlgos` provides distributed implementations of important operations such as finding strongly connected components and the finite diameter of directed graphs. `distributedDirectedGraphAlgos` can be used for computation on large-scale graphs.
+`distributedDirectedGraphAlgos` is a Python package for computing properties of directed graphs in a distributed manner. The API for `distributedDirectedGraphAlgos` provides distributed implementations of important operations including finding strongly connected components and the finite diameter of directed graphs. Strongly connected components are maximal subgraphs, where every node has a direct path from every other node in the subgraph. The finite diameter is the longest shortest path between any two nodes where such a path exists. Finding strongly connected components and the finite diameter of directed graphs have important implications in distributed control and in machine learning. For example, strongly connected components are important in designing controllable and observable networks and in solving community detection problems. Similarly, the finite diameter is important for fault detection in networks and speeding up search algorithms. In general, `distributedDirectedGraphAlgos` provides a foundation for distributed computation on large-scale directed graphs. 
 
 `distributedDirectedGraphAlgos` can be used by a large population of users, including researchers, scientists, and developers. 
 The algorithms were previously developed and published in [@reedSCCs]. The distributed nature of these algorithms enable scalability thereby making `distributedDirectedGraphAlgos` accessible and useful for future scientific explorations.
 
-# Mathematics
-
-Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
-
-Double dollars make self-standing equations:
-
-$$\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.$$
-
-You can also use plain \LaTeX for equations
-\begin{equation}\label{eq:fourier}
-\hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
-\end{equation}
-and refer to \autoref{eq:fourier} from text.
-
-# Citations
-
-Citations to entries in paper.bib should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
-
-If you want to cite a software repository URL (e.g. something on GitHub without a preferred
-citation) then you can do it with the example BibTeX entry below for @fidgit.
-
-For a quick reference, the following citation commands can be used:
-- `@author:2001`  ->  "Author et al. (2001)"
-- `[@author:2001]` -> "(Author et al., 2001)"
-- `[@author1:2001; @author2:2001]` -> "(Author1 et al., 2001; Author2 et al., 2002)"
-
-# Figures
-
-Figures can be included like this:
-![Caption for example figure.\label{fig:example}](figure.png)
-and referenced from text using \autoref{fig:example}.
-
-Figure sizes can be customized by adding an optional second parameter:
-![Caption for example figure.](figure.png){ width=20% }
 
 # Acknowledgements
 
-We acknowledge contributions from Brigitta Sipocz, Syrtis Major, and Semyeong
-Oh, and support from Kathryn Johnston during the genesis of this project.
+E. Reed acknowledges the financial support from the National Science Foundation GRFP DGE-1842487, the University of Southern California Annenberg Fellowship, and a USC WiSE Top-Off Fellowship. E. Reed and P. Bogdan also acknowledge the financial support from the National Science Foundation under the Career Award CPS/CNS-1453860, the NSF award under Grant Numbers CCF-1837131, MCB-1936775, CMMI-1936624, and CNS-1932620, the U.S. Army Research Office (ARO) under Grant No. W911NF-17-1-0076 and W911NF-23-1-0111, and the DARPA Young Faculty Award and DARPA Director Award, under Grant Number N66001-17-1-4044, a 2021 USC Stevens Center Technology Advancement Grant (TAG) award, an Intel faculty award and a Northrop Grumman grant.
+
+The financial supporters of this work had no role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript. The views, opinions, and/or findings contained in this dissertation are those of the author and should not be interpreted as representing official views or policies, either expressed or implied by the Defense Advanced Research Projects Agency, the Department of Defense or the National Science Foundation.
 
 # References
+[@reedSCCs]
