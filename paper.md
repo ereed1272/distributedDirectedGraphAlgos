@@ -1,71 +1,49 @@
 ---
-title: 'Gala: A Python package for galactic dynamics'
+title: 'distributedDirectedGraphAlgos: A Python package for distributed algorithms on directed graphs'
 tags:
   - Python
-  - astronomy
-  - dynamics
-  - galactic dynamics
-  - milky way
+  - directed graphs
+  - distributed algorithms
 authors:
-  - name: Adrian M. Price-Whelan
-    orcid: 0000-0000-0000-0000
+  - name: Emily A. Reed
+    orcid: 0000-0001-9598-5823
     equal-contrib: true
-    affiliation: "1, 2" # (Multiple affiliations must be quoted)
-  - name: Author Without ORCID
+    corresponding: true # (This is how to denote the corresponding author)
+    affiliation: 1 # (Multiple affiliations must be quoted)
+  - name: Guilherme Ramos
+    orcid: 0000-0001-6104-8444
     equal-contrib: true # (This is how you can denote equal contributions between multiple authors)
     affiliation: 2
-  - name: Author with no affiliation
-    corresponding: true # (This is how to denote the corresponding author)
+  - name: Paul Bogdan
+    orcid: 0000-0003-2118-0816
+    affiliation: 1
+  - name: Sérgio Pequito
+    orcid: 0000-0002-5143-1543
     affiliation: 3
 affiliations:
- - name: Lyman Spitzer, Jr. Fellow, Princeton University, USA
+ - name: Ming Hsieh Department of Electrical and Computer Engineering, University of Southern California, Los Angeles, CA, USA
    index: 1
- - name: Institution Name, Country
+ - name: Dept. of Computer Science and Engineering, Instituto Superior Técnico, University of Lisbon, Portugal and Instituto de Telecomunicações, Lisbon, Portugal
    index: 2
- - name: Independent Researcher, Country
+ - name: Department of Information Technology, Division of Systems and Control, Uppsala University, Uppsala, Sweden
    index: 3
-date: 13 August 2017
+date: August 1, 2023
 bibliography: paper.bib
 
-# Optional fields if submitting to a AAS journal too, see this blog post:
-# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
-aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
-aas-journal: Astrophysical Journal <- The name of the AAS journal.
 ---
 
 # Summary
 
-The forces on stars, galaxies, and dark matter under external gravitational
-fields lead to the dynamical evolution of structures in the universe. The orbits
-of these bodies are therefore key to understanding the formation, history, and
-future state of galaxies. The field of "galactic dynamics," which aims to model
-the gravitating components of galaxies to study their structure and evolution,
-is now well-established, commonly taught, and frequently used in astronomy.
-Aside from toy problems and demonstrations, the majority of problems require
-efficient numerical tools, many of which require the same base code (e.g., for
-performing numerical orbit integration).
+Many important computational problems need to be solved on large-scale directed graphs. Examples include partitioning graphs into clusters based on similar features, known as community detection, as well as identifying failures in communication across nodes, known as fault detection. Distributed computation is critical for solving these large-scale computational problems on multiple machines in an efficient manner. This package provides distributed functions in Python for solving computational problems on large-scale directed graphs. In particular, the package finds both the strongly connected components and finite diameter of directed graphs in a distributed manner. 
 
 # Statement of need
 
-`Gala` is an Astropy-affiliated Python package for galactic dynamics. Python
-enables wrapping low-level languages (e.g., C) for speed without losing
-flexibility or ease-of-use in the user-interface. The API for `Gala` was
-designed to provide a class-based and user-friendly interface to fast (C or
-Cython-optimized) implementations of common operations such as gravitational
-potential and force evaluation, orbit integration, dynamical transformations,
-and chaos indicators for nonlinear dynamics. `Gala` also relies heavily on and
-interfaces well with the implementations of physical units and astronomical
-coordinate systems in the `Astropy` package [@astropy] (`astropy.units` and
-`astropy.coordinates`).
 
-`Gala` was designed to be used by both astronomical researchers and by
-students in courses on gravitational dynamics or astronomy. It has already been
-used in a number of scientific publications [@Pearson:2017] and has also been
-used in graduate courses on Galactic dynamics to, e.g., provide interactive
-visualizations of textbook material [@Binney:2008]. The combination of speed,
-design, and support for Astropy functionality in `Gala` will enable exciting
-scientific explorations of forthcoming data releases from the *Gaia* mission
-[@gaia] by students and experts alike.
+
+`distributedDirectedGraphAlgos` is a Python package for computing properties of directed graphs in a distributed manner. The API for `distributedDirectedGraphAlgos` provides distributed implementations of important operations such as finding strongly connected components and the finite diameter of directed graphs. `distributedDirectedGraphAlgos` can be used for computation on large-scale graphs.
+
+`distributedDirectedGraphAlgos` can be used by a large population of users, including researchers, scientists, and developers. 
+The algorithms were previously developed and published in [@reedSCCs:2023]. The distributed nature of these algorithms enable scalability thereby making `distributedDirectedGraphAlgos` accessible and useful for future scientific explorations.
 
 # Mathematics
 
