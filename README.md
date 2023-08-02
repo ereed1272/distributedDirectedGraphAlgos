@@ -7,9 +7,10 @@ E. A. Reed, G. Ramos, P. Bogdan and S. Pequito, ["A Scalable Distributed Dynamic
 ## Code dependencies
 
 To get started with this package, you will first need to ensure that you have installed all of the necessary dependencies.
-First, install Python 3.8, 3.9, or 3.10. If you do not already have a Python environment configured on your computer, please see the instructions for installing the full scientific Python stack. https://scipy.org/install.html
+First, install Python 3.8, 3.9, or 3.10. If you do not already have a Python environment configured on your computer, consider installing PyCharm. See the instructions for installing https://www.jetbrains.com/pycharm/
 
 * install pip. See the documentation https://pip.pypa.io/en/stable/installation/
+* install the full scientific Python. See the documentation stack https://scipy.org/install.html
 * install multiprocess. See the documentation https://pypi.org/project/multiprocess/
 * install networkx. See the documentation https://networkx.org/documentation/stable/install.html.
 
