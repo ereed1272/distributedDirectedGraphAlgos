@@ -1,3 +1,9 @@
+## Citation
+Please consider citing this repositiory [![DOI](https://zenodo.org/badge/651583706.svg)](https://zenodo.org/badge/latestdoi/651583706)
+and our paper 
+
+E. A. Reed, G. Ramos, P. Bogdan and S. Pequito, ["A Scalable Distributed Dynamical Systems Approach to Learn the Strongly Connected Components and Diameter of Networks,"](https://ieeexplore.ieee.org/abstract/document/9904000) in IEEE Transactions on Automatic Control, vol. 68, no. 5, pp. 3099-3106, May 2023, doi: 10.1109/TAC.2022.3209446.
+
 ## Code dependencies
 
 To get started with this package, you will first need to insurace that you have installed all of the necessary dependencies.
